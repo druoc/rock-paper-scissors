@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Walter Turncoat', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#rock {
+  height: 350px;
+  margin-right: 10px;
+}
+
+#paper {
+  height: 300px;
+  margin-right: 10px;
+}
+
+#scissors {
+  height: 300px;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 110px;
+}
+
+#game-status {
+  margin-right: 50px;
+}
+
+#player-score {
+  margin-right: 70px;
+}
+
+#comp-score {
+  margin-left: 200px;
+}
+
+#player-score-disp {
+  color: #00bf19;
+}
+
+#comp-score-disp {
+  color: #c70000;
+}
+
+
+#reset-button {
+  background-color: #00bf19;
+  font-family: 'Walter Turncoat';
+}
+
+#reset-button:hover {
+  cursor: pointer;
+}
