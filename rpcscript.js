@@ -24,12 +24,12 @@ resetBtn.onclick = () => {
 }
 
 //function to generate a random number to pass into the computerPlay function
-function randNum() {
+randNum = () => {
   return Math.floor(Math.random() * 3);
 }
 
 //function to generate the computer's turn
-function computerPlay() {
+computerPlay = () => {
     let result = randNum(3);
      if (result === 0 ) {
       return "rock";
@@ -43,7 +43,7 @@ function computerPlay() {
 }
 
 //main game function. compares the players choices, and updates the scores and status accordingly
-function playRound(playerChoice, computerPlay) {
+playRound = (playerChoice, computerPlay) => {
   if (playerChoice === computerPlay) {
     gameStatus.innerText = "Its a tie!";
   }
@@ -75,7 +75,7 @@ function playRound(playerChoice, computerPlay) {
 }
 
 
-function gameEnd() {
+gameEnd = () => {
   if (comp === 5 ) {
     gameStatus.innerText = "Computer won this round! Click reset to try again!";
   }
@@ -84,7 +84,7 @@ function gameEnd() {
   }
 }
 
-function resetScore() {
+resetScore = () => {
   play = 0;
   comp = 0;
   playerScore.innerText = play;

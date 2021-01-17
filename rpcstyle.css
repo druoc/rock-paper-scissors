@@ -2,6 +2,7 @@
 
 *{
   box-sizing: border-box;
+  outline: none;
 }
 
 
@@ -9,6 +10,7 @@ body {
   font-family: 'Walter Turncoat', sans-serif;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -36,10 +38,15 @@ body {
   flex-direction: row;
   width: 100%;
   margin-top: 110px;
+  margin-left: 70px;
 }
 
 #game-status {
-  margin-right: 50px;
+  margin-left: 220px;
+  font-weight: bold;
+  font-size: 20px;
+
+  
 }
 
 #player-score {
@@ -52,16 +59,23 @@ body {
 
 #player-score-disp {
   color: #00bf19;
+  font-weight: bolder;
 }
 
 #comp-score-disp {
   color: #c70000;
+  font-weight: bolder;
 }
 
 
 #reset-button {
   background-color: #00bf19;
   font-family: 'Walter Turncoat';
+  border-radius: 10px;
+  box-shadow: #000;
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 400px;
 }
 
 #reset-button:hover {
